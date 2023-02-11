@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <title>Agriworld</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images.png" alt="">
+    </div>
+    
+    <ul class="navlist" id="navilist">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#vision"> Motto</a></li>
+      <li><a href="#contact">Login/Signup</a></li>
+    </ul>
+  
+    <div class="menu" id="toggleButton">
+      <div class="menuline"></div>
+      <div class="menuline"></div>
+      <div class="menuline"></div>
+    </div>
+  </nav>
+  <div class="full">
+  <div class="home" id="home">
+    <h1>One-stop Platform for all gardening aspirations</h1>
+    <p><span style="font-weight: bold;" >Place</span> to find agricultural innovations</p>
+  </div>
+
+<h1 id="about">About us</h1>
+<div class="about">
+<div>
+  <img src="IMG_connected-848x565.webp" alt="">
+</div>
+<div>
+<p>
+  Agriculture is the cultivation of land, raising of animals, and production of crops for food, fuel, and other products. It is one of the oldest and most important human activities, providing food and other essential resources to support human life. Agriculture has undergone significant changes throughout history, evolving from primitive subsistence farming to modern, industrialized agriculture.
+  One of the biggest challenges faced by farmers today is the changing climate. Rising temperatures, shifting rainfall patterns, and increased frequency of natural disasters can all have a significant impact on crop yields. To adapt to these changes, farmers are turning to new technologies and innovative practices, such as precision agriculture and regenerative farming.
+  Precision agriculture uses data and technology to precisely monitor and manage crops, while regenerative farming focuses on improving soil health and reducing the use of harmful chemicals.
+</p>
+</div>
+</div>
+
+
+
+
+<h1 id="vision">Motto</h1>
+<div class="vision">
+  <p> Educate farmers on various hybrid farming methods and technology.Providing information on available schemes and programs from the central
+    and state governments</p>
+</div>
+
+
+
+
+<h1 id="mission">Precision agriculture</h1>
+<div class="mission">
+  <p>
+    Precision agriculture uses advanced technologies like GPS, remote sensing, and drones to collect data on soil quality, crop health, and weather patterns. This data is then used to optimize farming practices, such as planting, irrigation, and fertilization, to increase yields while minimizing waste and environmental impact.  </p>
+</div>
+
+<div id="contact" class="login">
+<div class="log">
+ 
+<h2 class="login-header">Log in</h2>
+
+<form class="login-container">
+  <p><input type="email" placeholder="Email"></p>
+  <p><input type="password" placeholder="Password"></p>
+  <p><input type="submit" value="Log in"></p>
+</form>
+</div>
+</div>
+
+
+<div class="bottomContents">
+  <img id="Comlogo" src="images.png" alt="">
+  <div id="quicklinks">
+    <h3>QUICK LINKS</h3>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#vision">Motto</a></li>
+      <li><a href="#contact">Login/Signup</a></li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+</body>
+<script>
+  const toggleButton = document.getElementById('toggleButton')
+  const naviList = document.getElementById('navilist');
+  toggleButton.addEventListener('click',()=>{
+    naviList.classList.toggle('active');
+  })
+</script>
+</html>
